@@ -88,7 +88,7 @@ class _RegisterState extends State<Register> {
                           // ignore: deprecated_member_use
                           shadowColor: Colors.black.withOpacity(0.25),
                           minimumSize: Size(100, 50),
-                          side: BorderSide(color: Colors.blueGrey, width: 2),
+                          side: BorderSide(color: Colors.transparent, width: 2),
                         ),
                         onPressed: () {},
                         child: Text('Sign Up',
