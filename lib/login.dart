@@ -15,7 +15,7 @@ class _MyLoginState extends State<Login> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/loginn.png'),
+          image: AssetImage('assets/loginn-fotor-20250206113731.png'),
           fit: BoxFit.cover,
         ),
       ),
@@ -75,19 +75,13 @@ class _MyLoginState extends State<Login> {
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               padding: EdgeInsets.only(left: 3),
-                              foregroundColor:
-                                  const Color.fromARGB(255, 26, 51, 94),
-                              backgroundColor:
-                                  Color.fromARGB(255, 174, 213, 229),
+                              foregroundColor: Colors.transparent,
+                              backgroundColor: Colors.transparent,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              elevation: 5,
                               // ignore: deprecated_member_use
                               shadowColor: Colors.transparent,
-
-                              side: BorderSide(
-                                  color: Colors.transparent, width: 2),
                             ),
                             onPressed: () {},
                             child: Text('Forgot Password?',
@@ -114,7 +108,8 @@ class _MyLoginState extends State<Login> {
                             // ignore: deprecated_member_use
                             shadowColor: Colors.black.withOpacity(0.5),
                             minimumSize: Size(100, 50),
-                            side: BorderSide(color: Colors.blueGrey, width: 2),
+                            side:
+                                BorderSide(color: Colors.transparent, width: 2),
                           ),
                           onPressed: () {},
                           child: Text('Sign In',
@@ -129,6 +124,7 @@ class _MyLoginState extends State<Login> {
                       padding: EdgeInsets.all(8),
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -138,7 +134,6 @@ class _MyLoginState extends State<Login> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            elevation: 5,
                             // ignore: deprecated_member_use
                             shadowColor: Colors.black.withOpacity(0.17),
                             minimumSize: Size(100, 50),
@@ -148,7 +143,7 @@ class _MyLoginState extends State<Login> {
                           onPressed: () {
                             Navigator.pushNamed(context, 'register');
                           },
-                          child: Text('Sign Up',
+                          child: Text('New here? Sign Up',
                               style: TextStyle(
                                   color: Color.fromARGB(255, 20, 97, 164),
                                   fontSize: 15,
